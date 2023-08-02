@@ -315,7 +315,7 @@ end)
 local Toggle9 = Section1:CreateToggle("Random Chest", nil, function(State)
     toggle = State
         while toggle do
-        wait(3)
+        wait(1)
                 for i, v in pairs(game.Workspace.RandomChests:GetDescendants()) do
                     if v:IsA("Model") and string.match(v.Name, "Chest") then
                         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame
@@ -329,7 +329,7 @@ end)
 local Toggle5 = Section1:CreateToggle("Suken Chest", nil, function(State)
     toggle = State
         while toggle do
-            wait(3)
+            wait(1)
              for i, v in pairs(game.Workspace:GetChildren()) do
                 if string.find(v.Name, "ShipModel") then
                         teleport(v.HitBox.CFrame)
